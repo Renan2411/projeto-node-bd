@@ -12,6 +12,8 @@ let app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+require('./routes/UserRouter')(app)
+
 app.listen(8081, () => {
     console.log('ta rodando');
 });

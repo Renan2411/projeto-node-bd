@@ -19,5 +19,6 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 //Modelos de tabela
+db.userModel = require('./UserModel')(sequelize, Sequelize)
 
 module.exports = db;
